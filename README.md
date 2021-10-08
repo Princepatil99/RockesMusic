@@ -1,4 +1,4 @@
-## 🎵 ROCKS MUSIC BOT
+## ❤️ ROCKS MUSIC BOT ❤️
 
 ROCKS Music Is A Telegram Bot Project That's Allow You To Play Music On Telegram Voice Chat Group.
 
@@ -14,7 +14,7 @@ ROCKS Music Is A Telegram Bot Project That's Allow You To Play Music On Telegram
     <a href="https://github.com/jankarikiduniya/RockesMusic/network/members"> <img src="https://img.shields.io/github/stars/jankarikiduniya/RockesMusic?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
 </p>
 
-<h3>Requirements 📝</h3>
+<h3>Requirements 😊</h3>
 
 - FFmpeg
 - NodeJS [nodesource.com](https://nodesource.com/)
@@ -22,20 +22,20 @@ ROCKS Music Is A Telegram Bot Project That's Allow You To Play Music On Telegram
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 - [MongoDB](https://cloud.mongodb.com/)
 
-### 🧪 Get STRING_SESSION from below:
+### ❤️ Get STRING_SESSION from below:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@AssadAli/AsadMusic) ``Pyrogram``
 
-## Heroku Deployment 💜
+## Heroku Deployment ❤️
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jankarikiduniya/RockesMusic)
 
-### 🎖 History
+### Asas– History
 
 [![Mentioned in Awesome Python](https://awesome.re/mentioned-badge.svg)](https://github.com/levina-lab/VeezMusic)
 
-## Features 🔮
+## Features ❤️”®
 
 - Thumbnail Support
 - Playlist Support
@@ -52,7 +52,7 @@ The easy way to host this bot, deploy to Heroku, Change the app country to Europ
 - Statistic Collector
 - Block / Unblock (restrict user for using your bot)
 
-## Commands 🛠
+## Commands ❤️
 
 - `/play <song name>` - play song you requested
 - `/playlist` - Show now playing list
@@ -62,7 +62,7 @@ The easy way to host this bot, deploy to Heroku, Change the app country to Europ
 - `/lyric <song name>` - lyrics scrapper
 - `/vk <song name>` - generate song without download
 
-#### Admins Only 👷‍♂︄1�7
+#### Admins Only 😜
 - `/player` - open music player settings panel
 - `/pause` - pause song play
 - `/resume` - resume song play
@@ -79,22 +79,22 @@ The easy way to host this bot, deploy to Heroku, Change the app country to Europ
 - `/deauth` - deauthorized people to access the admin commands
 - `/control` - open the music player control panel
 
-### Sudo User 🧙‍♂︄1�7
+### Sudo User ❣️
 - `/stats` - see the bot statistic
 - `/pmpermit on | off` turn on/off the assistant pmpermit
 - `/leaveall` - order the assistant to leave all groups
 
-### Owner Only 👨🏻‍✈︄1�7
+### Owner Only 🕺
 - `/broadcast` - send a broadcast message from the bot
 - `/block` - block people for using your bot
 - `/unblock` - unblock people you blocked for using your bot
 - `/blocklist` - show the list of all people who's blocked for using your bot
 
-## 🔎 Inline Search Support
+## ❤️ Inline Search Support
 - just type the bot username in any chat, example: "`@VeezMusicBot Faded Alan Walker`", then bot will give you a results of the query you search in inline mode.
 
 
-## VPS Deployment 📡
+## VPS Deployment ❤️
 
 ```sh
 sudo apt update && apt upgrade -y
@@ -111,11 +111,11 @@ vim .env #Fill up your ENVs ( Steps press i to enter in insert mode then edit th
 python3 main.py # Run the bot
 ```
 
-### Special Credits 💖
+### Special Credits ❤️❤️
 - [Jankari Ki Duniya](https://github.com/jankarikiduniya): Dev
 - [Asad Ali](https://t.me/Dr_Asad_Ali): Dev
 - [Harshit](https://t.me/HarshitSharma361): Support
 - [Dhiren]() Support
 
-### Support & Updates 🎑
+### Support & Updates ❤️❤️
 <a href="https://t.me/Shayri_Music_Lovers"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/jankarikiduniya"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
