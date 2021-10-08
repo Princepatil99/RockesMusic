@@ -33,7 +33,7 @@ The easy way to host this bot, deploy to Heroku, Change the app country to Europ
 
 ### Asad– History
 
-[![Mentioned in YouTube](https://youtube.com/mentioned-badge.svg)](https://www.youtube.com/JankariKiDuniya/videos)
+<a href="https://www.youtube.com/JankariKiDuniya"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=YouTube"></a>
 
 ## Features ❤️”®
 
