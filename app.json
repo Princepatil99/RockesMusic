@@ -1,7 +1,7 @@
 {
-    "name": "Veez Music Bot",
-    "logo": "https://telegra.ph/file/9dd9b20abcda2d7bb6725.png",
-    "description": "veez music allow you to stream music trought the telegram voice chat feature.",
+    "name": "Rock Music Bot",
+    "logo": "https://telegra.ph/file/1b3ae71e07bcbe85db161.jpg",
+    "description": "Rocks Music Allow You To Stream Music Through The Telegram Voice Chat Feature.",
     "keywords": ["music", "voice chat", "telegram"],
     "repository": "https://github.com/levina-lab/veezmusic",
     "stack": "container",
@@ -37,22 +37,22 @@
         "BOT_USERNAME": {
             "description": "fill with your bot username without @",
             "required": true,
-            "value": "veezmusicbot"
+            "value": "You Bot User Name"
         },
         "ASSISTANT_NAME": {
             "description": "fill with the assistant username without @",
             "required": true,
-            "value": "veezasisstant"
+            "value": "VC Assistant"
         },
         "BG_IMAGE": {
             "description": "fill with your costum background image link",
             "required": false,
-            "value": "https://telegra.ph/file/20147c4f049e2c1f2f248.png"
+            "value": "https://telegra.ph/file/482fd875d88ed43f4ad13.jpg"
         },
         "OWNER_NAME": {
             "description": "fill with your username without @",
             "required": false,
-            "value": "dlwrml"
+            "value": "Dr_Asad_Ali"
         },
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
@@ -74,12 +74,12 @@
         "UPDATES_CHANNEL": {
             "description": "if you have channel fill the channel username here without @",
             "required": false,
-            "value": "levinachannel"
+            "value": "jankarikiduniya"
         },
         "GROUP_SUPPORT": {
             "description": "if you have group fill the group username here without @",
             "required": false,
-            "value": "VeezSupportGroup"
+            "value": "Shayri_Music_Lovers"
         }
     },
     "buildpacks": [
