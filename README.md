@@ -31,9 +31,9 @@ The easy way to host this bot, deploy to Heroku, Change the app country to Europ
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jankarikiduniya/RockesMusic)
 
-### Asas– History
+### Asad– History
 
-[![Mentioned in Awesome Python](https://awesome.re/mentioned-badge.svg)](https://github.com/levina-lab/VeezMusic)
+[![Mentioned in YouTube](https://youtube.com/mentioned-badge.svg)](https://www.youtube.com/JankariKiDuniya/videos)
 
 ## Features ❤️”®
 
