@@ -3,7 +3,7 @@
     "logo": "https://telegra.ph/file/1b3ae71e07bcbe85db161.jpg",
     "description": "Rocks Music Allow You To Stream Music Through The Telegram Voice Chat Feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/levina-lab/veezmusic",
+    "repository": "https://github.com/jankarikiduniya",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
