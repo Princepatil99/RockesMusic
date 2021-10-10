@@ -48,7 +48,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ Bot **reloaded correctly !**\n✅ **Admin list** has been **updated !**"
+        "✅ Bot **reloaded correctly !**\n✅ **Admin list** has been **updated !**\n✅ **Dev** be **Asad Ali !**"
     )
 
 
@@ -88,7 +88,7 @@ async def pause(_, message: Message):
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
         await message.reply_text(
-            "⏸ **Track paused.**\n\n• **To resume the playback, use the**\n» `/resume` command."
+            "⏸ **Wah Bete Song Ko Rook Diya 🤣.**\n\n• **To Resume The Playback, Use The**\n» `/resume` command."
         )
 
 
@@ -104,7 +104,7 @@ async def resume(_, message: Message):
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
         await message.reply_text(
-            "▶️ **Track resumed.**\n\n• **To pause the playback, use the**\n» `/pause` command."
+            "▶️ **Barey Taij Ho Dobara Chala Diya 🤣.**\n\n• **To Pasus ⏸️ The Playback, Use The**\n» `/pause` command."
         )
 
 
@@ -114,7 +114,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❌ **no music is currently playing**")
+        await message.reply_text("❌ **Oye Tang Mat Ker Abhi Kuch Nai Chal Raha 😁**")
     else:
         try:
             queues.clear(chat_id)
@@ -122,7 +122,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("✅ **music playback has ended**")
+        await message.reply_text("✅ **Jab End He Karna Tha To Play Que Kiya 😢**")
 
 
 @Client.on_message(command(["skip", f"skip@{BOT_USERNAME}"]) & other_filters)
@@ -132,7 +132,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❌ **no music is currently playing**")
+        await message.reply_text("❌ **Koe Song Nai Chal Raha Abhi Thak Gaya Main 😜**")
     else:
         queues.task_done(chat_id)
 
@@ -146,7 +146,7 @@ async def skip(_, message: Message):
         qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text("⏭ **You've skipped to the next song.**")
+    await message.reply_text("⏭ **Abey Yar Jeeney Do Skip Kar Diya Ab Dosra Sun 😂.**")
 
 
 @Client.on_message(command(["auth", f"auth@{BOT_USERNAME}"]) & other_filters)
@@ -219,12 +219,12 @@ async def cbpause(_, query: CallbackQuery):
         callsmusic.pytgcalls.active_calls[query.message.chat.id] == "paused"
     ):
         await query.edit_message_text(
-            "❌ **no music is currently playing**", reply_markup=BACK_BUTTON
+            "❌ **Oye Dekh Tang Na Kar Abhi Koe Song Nai Chal Raha 😜**", reply_markup=BACK_BUTTON
         )
     else:
         callsmusic.pytgcalls.pause_stream(query.message.chat.id)
         await query.edit_message_text(
-            "⏸ music playback has been paused", reply_markup=BACK_BUTTON
+            "⏸ **Yar Aram Sey Suno Na Pause Que Karty Ho 😔**", reply_markup=BACK_BUTTON
         )
 
 
@@ -236,12 +236,12 @@ async def cbresume(_, query: CallbackQuery):
         callsmusic.pytgcalls.active_calls[query.message.chat.id] == "resumed"
     ):
         await query.edit_message_text(
-            "❌ **no music is paused**", reply_markup=BACK_BUTTON
+            "❌ **Music 🎶 Paused Nai Hai**", reply_markup=BACK_BUTTON
         )
     else:
         callsmusic.pytgcalls.resume_stream(query.message.chat.id)
         await query.edit_message_text(
-            "▶️ music playback has been resumed", reply_markup=BACK_BUTTON
+            "▶️ **Barey Taiz Ho Dobara Chala Diya 🤣**", reply_markup=BACK_BUTTON
         )
 
 
@@ -251,7 +251,7 @@ async def cbend(_, query: CallbackQuery):
     get_chat_id(query.message.chat)
     if query.message.chat.id not in callsmusic.pytgcalls.active_calls:
         await query.edit_message_text(
-            "❌ **no music is currently playing**", reply_markup=BACK_BUTTON
+            "❌ **Abhi Koe Bhi Song Nai Chal Raha Thak Gaya 😔**", reply_markup=BACK_BUTTON
         )
     else:
         try:
@@ -261,7 +261,7 @@ async def cbend(_, query: CallbackQuery):
 
         callsmusic.pytgcalls.leave_group_call(query.message.chat.id)
         await query.edit_message_text(
-            "✅ the music queue has been cleared and successfully left voice chat",
+            "✅ The Music 🎶 Queue Has Been Cleared And Successfully Left Voice Chat",
             reply_markup=BACK_BUTTON,
         )
 
@@ -273,7 +273,7 @@ async def cbskip(_, query: CallbackQuery):
     chat_id = get_chat_id(query.message.chat)
     if query.message.chat.id not in callsmusic.pytgcalls.active_calls:
         await query.edit_message_text(
-            "❌ **no music is currently playing**", reply_markup=BACK_BUTTON
+            "❌ **Oye Daikh Main Thak Gaya Abhi Song Nai Suna Raha Bhakk 😂**", reply_markup=BACK_BUTTON
         )
     else:
         queues.task_done(query.message.chat.id)
@@ -291,5 +291,5 @@ async def cbskip(_, query: CallbackQuery):
     if not qeue:
         return
     await query.edit_message_text(
-        "⏭ **You've skipped to the next song**", reply_markup=BACK_BUTTON
+        "⏭ **Oye Jab Sunna He Nai Tha Lagaya Que Tha Baaz Aja 😐**", reply_markup=BACK_BUTTON
     )
