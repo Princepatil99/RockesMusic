@@ -1,1 +1,1 @@
-"""VeezMusic Plugins!"""
+"""Rocks Music Plugins!"""
