@@ -19,7 +19,7 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>• **𝗜 𝗗𝗼𝗻'𝘁 𝗛𝗮𝘃𝗲 𝗣𝗲𝗿𝗺𝗲𝘀𝘀𝗶𝗼𝗻\n\n» ❌ __𝗔𝗱𝗱 𝗨𝘀𝗲𝗿𝘀__</b>",
+            "<b> 𝗜 𝗗𝗼𝗻'𝘁 𝗛𝗮𝘃𝗲 𝗣𝗲𝗿𝗺𝗲𝘀𝘀𝗶𝗼𝗻\n\n» ❌ __𝗔𝗱𝗱 𝗨𝘀𝗲𝗿𝘀__</b>",
         )
         return
 
@@ -110,7 +110,7 @@ async def addcchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>• **i'm not have permission:**\n\n» ❌ __Add Users__</b>",
+            "<b>• 𝗜 𝗗𝗼𝗻'𝘁 𝗛𝗮𝘃𝗲 𝗣𝗲𝗿𝗺𝗲𝘀𝘀𝗶𝗼𝗻\n\n» ❌ __𝗔𝗱𝗱 𝗨𝘀𝗲𝗿𝘀__</b>",
         )
         return
 
