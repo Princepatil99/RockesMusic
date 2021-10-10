@@ -22,7 +22,7 @@
         "OWNER_ID": {
             "description": "fill with your telegram id as the owner of the bot",
             "required": true,
-            "value": ""
+            "value": "1342820594"
         },
         "DATABASE_URL": {
             "description": "fill with the mongodb url you get from cloud.mongodb.com",
