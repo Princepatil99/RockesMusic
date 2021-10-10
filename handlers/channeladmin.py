@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Veez Music-Project
+# Copyright (C) 2021 Asad Ali Music
 
 from asyncio.queues import QueueEmpty
 
@@ -24,7 +24,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ Bot **reloaded correctly  By Asad!**\n✅ **Admin list** has been **updated !**"
+        "✅ Bot **reloaded correctly By Asad!**\n✅ **Admin list** has been **updated !**"
     )
 
 
@@ -37,7 +37,7 @@ async def channel_pause(_, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("❌ `NOT_LINKED`\n\n• **The userbot could not play music, due to group not linked to channel yet.**")
+        await message.reply("❌ `NOT_LINKED`\n\n• **The Userbot Could Not Play Music, Due To Group Not Linked To Channel Yet**")
         return
     chat_id = chid
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
@@ -58,7 +58,7 @@ async def channel_resume(_, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("❌ `NOT_LINKED`\n\n• **The userbot could not play music, due to group not linked to channel yet.**")
+        await message.reply("❌ `NOT_LINKED`\n\n• **The Userbot Could Not Play Music, Due To Group Not Linked To Channel Yet.**")
         return
     chat_id = chid
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
@@ -79,11 +79,11 @@ async def channel_stop(_, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("❌ `NOT_LINKED`\n\n• **The userbot could not play music, due to group not linked to channel yet.**")
+        await message.reply("❌ `NOT_LINKED`\n\n• **The Userbot Could Not Play Music 🎶, Due To Group Not Linked To Channel Yet.**")
         return
     chat_id = chid
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❌ **no music is currently playing**")
+        await message.reply_text("❌ **Abhi Free Hon Song Nai Chal Raha** 🥺")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -91,7 +91,7 @@ async def channel_stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("✅ **music playback has ended**")
+        await message.reply_text("✅ **Bara Kamina Hai Chup Karwa Diya** 😁")
 
 
 @Client.on_message(command(["cskip", f"cskip@{BOT_USERNAME}"]) & other_filters)
@@ -104,11 +104,11 @@ async def skip(_, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("❌ `NOT_LINKED`\n\n• **The userbot could not play music, due to group not linked to channel yet.**")
+        await message.reply("❌ `NOT_LINKED`\n\n• **The Userbot Could Not Play Music, Due To Group Not Linked To Channel Yet.**")
         return
     chat_id = chid
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❌ **no music is currently playing**")
+        await message.reply_text("❌ **Abhi Koe Song Nai Play Ho Raha** 🥺")
     else:
         callsmusic.queues.task_done(chat_id)
 
@@ -124,4 +124,4 @@ async def skip(_, message: Message):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text("⏭ **You've skipped to the next song.**")
+    await message.reply_text("⏭ **Ker Diya Na Song Ko Skip.** 🥺")
