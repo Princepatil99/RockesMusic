@@ -480,7 +480,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"» **Userbot Was Banned In This Group !**\n\n**unban @{ASSISTANT_NAME} And Added Again To This Group Manually."
+            f"» **Wah Userbot Ko Ban Kar Rakha Hai Aur Song Play Karney Aa Gaya 🥺!**\n\n**unban @{ASSISTANT_NAME} Pehley Isko Unban Ya Manually Add Ker 🤨."
         )
         return
     text_links = None
