@@ -84,7 +84,7 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("❌ **no music is currently playing**")
+        await message.reply_text("❌ **Abhi Kuch Nai Chal Raha Thak Gaya Hon Yar 😁**")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
         await message.reply_text(
@@ -100,7 +100,7 @@ async def resume(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "playing"
     ):
-        await message.reply_text("❌ **no music is paused**")
+        await message.reply_text("❌ **Pehley Song To Chala Ley Nikammey 😜**")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
         await message.reply_text(
@@ -236,7 +236,7 @@ async def cbresume(_, query: CallbackQuery):
         callsmusic.pytgcalls.active_calls[query.message.chat.id] == "resumed"
     ):
         await query.edit_message_text(
-            "❌ **Music 🎶 Paused Nai Hai**", reply_markup=BACK_BUTTON
+            "❌ **O Hello Pehley Koe Song To Chala Lo 😜**", reply_markup=BACK_BUTTON
         )
     else:
         callsmusic.pytgcalls.resume_stream(query.message.chat.id)
