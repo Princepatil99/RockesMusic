@@ -39,32 +39,6 @@ async def convert_count(count):
         x = "First"
     elif int(count) == 2:
         x = "Second"
-    elif int(count) == 3:
-        x = "Third"
-    elif int(count) == 4:
-        x = "Fourth"
-    elif int(count) == 5:
-        x = "Fifth"
-    elif int(count) == 6:
-        x = "Sixth"
-    elif int(count) == 7:
-        x = "Seventh"
-    elif int(count) == 8:
-        x = "Eighth"
-    elif int(count) == 9:
-        x = "Ninth"
-    elif int(count) == 10:
-        x = "Tenth"
-    elif int(count) == 11:
-        x = "Eleventh"
-    elif int(count) == 12:
-        x = "Twelfth"
-    elif int(count) == 13:
-        x = "Thirteenth"
-    elif int(count) == 14:
-        x = "Fourteenth"
-    elif int(count) == 15:
-        x = "Fifteenth"
     elif str(count) == "all":
         x = "all"
     return x
