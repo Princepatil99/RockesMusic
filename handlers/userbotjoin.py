@@ -19,7 +19,7 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>• **i'm not have permission:**\n\n» ❌ __Add Users__</b>",
+            "<b>• **𝗜 𝗗𝗼𝗻'𝘁 𝗛𝗮𝘃𝗲 𝗣𝗲𝗿𝗺𝗲𝘀𝘀𝗶𝗼𝗻\n\n» ❌ __𝗔𝗱𝗱 𝗨𝘀𝗲𝗿𝘀__</b>",
         )
         return
 
@@ -31,11 +31,11 @@ async def addchannel(client, message):
     try:
         await USER.join_chat(invitelink)
         await USER.send_message(
-            message.chat.id, "🤖: i'm joined here for playing music on voice chat"
+            message.chat.id, "🤖: 𝗜 𝗛𝗮𝘃𝗲 𝗝𝗼𝗶𝗻𝗱 𝗛𝗲𝗿𝗲 𝗧𝗼 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 𝗢𝗻 𝗩𝗖 𝗖𝗵𝗮𝘁 "
         )
     except UserAlreadyParticipant:
         await message.reply_text(
-            f"<b>✅ userbot already joined chat</b>",
+            f"<b>✅ 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗔𝗹𝗿𝗲𝗮𝗱𝘆 𝗜𝗻 𝗖𝗵𝗮𝘁</b>",
         )
     except Exception as e:
         print(e)
