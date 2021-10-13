@@ -520,7 +520,7 @@ async def play(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}"
                     )
                 ],
             ]
@@ -567,7 +567,7 @@ async def play(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}"
                     )
                 ],
             ]
@@ -659,7 +659,7 @@ async def play(_, message: Message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                            "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}"
                         )
                     ],
                 ]
@@ -762,7 +762,7 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
                 InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
             ],
-            [InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}")],
         ]
     )
     await generate_cover(title, thumbnail)
@@ -916,7 +916,7 @@ async def ytplay(_, message: Message):
             ],
             [
                 InlineKeyboardButton(
-                    "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}"
                 ),
                 InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
             ],
