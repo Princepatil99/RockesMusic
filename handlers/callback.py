@@ -1,4 +1,4 @@
-# (C) 2021 VeezMusic-Project
+# (C) 2021 © Rocks Project
 
 from config import (
     ASSISTANT_NAME,
@@ -28,7 +28,7 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
@@ -39,15 +39,15 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 🅖︎𝐫𝐨𝐮𝐩🅟︎", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 🅒︎𝐡𝐚𝐧𝐧𝐞🅛︎", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/jankarikiduniya/RockesMusic"
+                        "🌐 🅚︎🅘︎🅝︎🅖︎ 🇵🇰", url="https://youtube.com/jankarikiduniya"
                     )
                 ],
             ]
