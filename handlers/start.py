@@ -46,26 +46,26 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ 𝗕𝗮𝘀𝗶𝗰 𝗚𝘂𝗶𝗱𝗲", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("💝 Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("📚 🅒︎𝐨𝐦𝐦𝐚𝐧𝐝🅢︎", callback_data="cbcmds"),
+                    InlineKeyboardButton("💝 🅟𝐫𝐢𝐞𝐧𝐜🅔︎", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 🅖︎𝐫𝐨𝐮🅟︎", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 🅒𝐡𝐚𝐧𝐧𝐞🅛︎", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://www.youtube.com/jankarikiduniya"
+                        "🌐 🅚𝐢𝐧🅖︎", url="https://www.youtube.com/jankarikiduniya"
                     )
                 ],
             ]
@@ -86,19 +86,19 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "✨ 🅖︎𝐫𝐨𝐮🅟︎", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 🅒︎𝐡𝐚𝐧𝐧𝐞🅛︎", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ]
             ]
         )
     
-    alive = f"✨ Bot Achey Sey Chal Raha\n\n✨ Database Bhi Chal Raha\n\n✨ 𝗨𝗽𝘁𝗶𝗺𝗲 𝗦𝘁𝗮𝘁𝘂𝘀: `{uptime}`"
+    alive = f"✨ 𝐁𝐨𝐭 𝐈𝐬 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 🤗...\n\n✨ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐈𝐬 𝐖𝐨𝐫𝐤𝐢𝐧𝐠...\n\n✨ 𝗨𝗽𝘁𝗶𝗺𝗲 𝗦𝘁𝗮𝘁𝘂𝘀: `{uptime}`"
     
     await message.reply_photo(
-        photo="https://telegra.ph/file/70b007e2aaaaf2b676d38.jpg",
+        photo="https://telegra.ph/file/dbfb37d283ae466692ada.jpg",
         caption=alive,
         reply_markup=keyboard,
     )
