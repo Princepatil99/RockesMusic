@@ -1,5 +1,5 @@
 # Rocks Music Bot- Telegram bot for streaming audio in group calls
-# Copyright (C) 2021  Roj Serbest
+# Copyright (C) 2021  Rocks Project
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
