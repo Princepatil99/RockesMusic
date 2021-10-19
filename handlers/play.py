@@ -520,14 +520,14 @@ async def play(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👨‍👨‍👧‍👦 Gʀᴏᴜᴘ 👨‍👨‍👧‍👦", url=f"https://t.me/{GROUP_SUPPORT}"
                     )
                 ],
             ]
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/de2f055c5bf699169c91d.jpg"
+        thumb_name = "https://telegra.ph/file/013406fefdfe601d85023.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         message.from_user.first_name
@@ -539,7 +539,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("🔎 **Roko Jara Search Ho Raha Hai...**😜")
+        await lel.edit("🔎 **Searching...**😜")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -567,7 +567,7 @@ async def play(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👨‍👨‍👧‍👦 Gʀᴏᴜᴘ 👨‍👨‍👧‍👦", url=f"https://t.me/{GROUP_SUPPORT}"
                     )
                 ],
             ]
@@ -632,8 +632,9 @@ async def play(_, message: Message):
             return
             # veez project
         except:
-            await lel.edit("__No More Results To Choose, Starting To Playing...__")
-
+            await lel.edit("__**Processing...**__")
+            
+            await lel.delete()
             # print(results)
             try:
                 url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -659,7 +660,7 @@ async def play(_, message: Message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}"
+                            "👨‍👨‍👧‍👦 Gʀᴏᴜᴘ 👨‍👨‍👧‍👦", url=f"https://t.me/{GROUP_SUPPORT}"
                         )
                     ],
                 ]
@@ -730,7 +731,7 @@ async def lol_cb(b, cb):
         cb.message.reply_to_message.from_user.first_name
     except:
         cb.message.from_user.first_name
-    results = YoutubeSearch(query, max_results=5).to_dict()
+    results = YoutubeSearch(query, max_results=1).to_dict()
     resultss = results[x]["url_suffix"]
     title = results[x]["title"][:60]
     thumbnail = results[x]["thumbnails"][0]
@@ -762,7 +763,7 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
                 InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
             ],
-            [InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}")],
+            [InlineKeyboardButton("👨‍👨‍👧‍👦 Gʀᴏᴜᴘ 👨‍👨‍👧‍👦", url=f"https://t.me/{GROUP_SUPPORT}")],
         ]
     )
     await generate_cover(title, thumbnail)
@@ -916,9 +917,9 @@ async def ytplay(_, message: Message):
             ],
             [
                 InlineKeyboardButton(
-                    "📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP_SUPPORT}"
+                    "📣 ᴄʜᴀɴɴᴇʟ 📣", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
-                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("👨‍👨‍👧‍👦 ɢʀᴏᴜᴘ 👨‍👨‍👧‍👦", url=f"https://t.me/{GROUP_SUPPORT}"),
             ],
         ]
     )

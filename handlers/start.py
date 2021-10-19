@@ -48,11 +48,11 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        " Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ",
+                        "⚙️ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ⚙️",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("Bᴀsɪᴄ Gᴜɪᴅᴇ", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("👩‍💻 Bᴀsɪᴄ Gᴜɪᴅᴇ👩‍💻 ", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 Cᴏᴍᴍᴀɴᴅs︎ 📚", callback_data="cbcmds"),
                     InlineKeyboardButton("💝 Oᴡɴᴇʀ 💝", url=f"https://t.me/{OWNER_NAME}"),
