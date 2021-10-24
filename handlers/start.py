@@ -67,7 +67,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👑 Kɪɴɢ 👑", url="https://t.me/Dr_Asad_Ali"
+                        "👑 Kɪɴɢ 👑", url="https://t.me/Princepatil96k"
                     )
                 ],
             ]
@@ -100,7 +100,7 @@ async def start(client: Client, message: Message):
     alive = f"✨ 𝐁𝐨𝐭 𝐈𝐬 𝐖𝐨𝐫𝐤𝐢𝐧𝐠...\n✨ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐈𝐬 𝐖𝐨𝐫𝐤𝐢𝐧𝐠...\n✨ 𝗨𝗽𝘁𝗶𝗺𝗲 𝗦𝘁𝗮𝘁𝘂𝘀: `{uptime}`\n✨ 𝐃𝐞𝐯.👉 **Asᴀᴅ Aʟɪ**"
     
     await message.reply_photo(
-        photo="https://telegra.ph/file/86e7cc4fb3033dfddcc0a.png",
+        photo="https://telegra.ph/file/0b2272ddb6abf751be763.jpg",
         caption=alive,
         reply_markup=keyboard,
     )
